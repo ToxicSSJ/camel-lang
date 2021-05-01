@@ -16,7 +16,7 @@ public class sym {
   public static final int num = 2;
   public static final int op = 8;
   public static final int finmientras = 11;
-  public static final int list = 15;
+  public static final int list = 16;
   public static final int mientras = 9;
   public static final int asig = 13;
   public static final int error = 1;
@@ -24,7 +24,7 @@ public class sym {
   public static final int pd = 5;
   public static final int pc = 14;
   public static final int tipo = 12;
-  public static final int cm = 16;
+  public static final int cm = 15;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
@@ -41,8 +41,8 @@ public class sym {
   "tipo",
   "asig",
   "pc",
-  "list",
-  "cm"
+  "cm",
+  "list"
   };
 }
 

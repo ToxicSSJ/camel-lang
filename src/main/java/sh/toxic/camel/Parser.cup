@@ -10,7 +10,7 @@ parser code {:
     }
 :};
 
-terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,tipo,asig,pc,list,cm;
+terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,tipo,asig,pc,cm,list;
 non terminal E,T,EL,EA,Z,I,IS;
 
 IS ::= I;
