@@ -1,0 +1,28 @@
+Programa uno
+
+Entero a,b,c,i;
+
+Leer a,b,c;
+
+i=0;
+a=0;
+
+Mientras (i<10) hacer
+	Si (a<b) Entonces
+		a=a+i;
+	sino
+		b=b+i;
+	Fin si
+	i=i+1;
+finMientras
+
+para i=0 hasta a paso 2
+       c=c+i;
+       para a=1 hasta b
+	     escribir a;
+       fin para
+fin para
+
+escribir “a =”,a, “ b = “, b
+
+FinPrograma

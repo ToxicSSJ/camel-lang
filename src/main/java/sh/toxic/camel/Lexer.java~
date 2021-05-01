@@ -747,7 +747,7 @@ class Lexer implements java_cup.runtime.Scanner {
             }
           case 26: break;
           case 13: 
-            { ts.add(new Token("Palabra reservada ", yytext()));return symbol(sym.mientras);
+            { ts.add(new Token("Palabra reservada ABC ", yytext()));return symbol(sym.mientras);
             }
           case 27: break;
           case 14: 
