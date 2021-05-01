@@ -1,4 +1,5 @@
-z=5-5+5;
+z=5|n;
+Tipo z,a,b,c;
 MIENTRAS((i<2)&j<3) hacer
     i=5;
     j=25;

@@ -10,13 +10,15 @@ parser code {:
     }
 :};
 
-terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,asig,pc;
-non terminal E,T,EL,EA,I,IS;
+terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,asig,pc,tipo,list,cm;
+non terminal E,T,EL,EA,I,IS,Z;
 
-IS::=I;
-IS::=I IS;
-I::=mientras pi EL pd hacer IS finmientras;
-I::=id asig EL pc;
+IS ::= I;
+IS ::= I IS;
+I ::= mientras pi EL pd hacer IS finmientras;
+I ::= id asig EL pc;
+I ::= tipo Z pc;
+Z ::= id | Z cm id;
 EL ::= EL ol EA;
 EL ::= EA;
 EA ::= E or E;
@@ -25,3 +27,4 @@ E ::= E op T;
 E ::= T;
 T ::= num | id;
 T ::= pi EL pd;
+
