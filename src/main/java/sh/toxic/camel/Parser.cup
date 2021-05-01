@@ -1,0 +1,27 @@
+package sh.toxic.camel;
+
+import java_cup.runtime.*;
+
+parser code {:
+    public String errsin="";
+    public void syntax_error(Symbol x){
+        errsin+="\nError Sintaxis en pos " + (x.left+1) + "," + (x.right+1);
+        throw new UnsupportedOperationException (errsin);
+    }
+:};
+
+terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,asig,pc;
+non terminal E,T,EL,EA,I,IS;
+
+IS::=I;
+IS::=I IS;
+I::=mientras pi EL pd hacer IS finmientras;
+I::=id asig EL pc;
+EL ::= EL ol EA;
+EL ::= EA;
+EA ::= E or E;
+EA ::= E;
+E ::= E op T;
+E ::= T;
+T ::= num | id;
+T ::= pi EL pd;

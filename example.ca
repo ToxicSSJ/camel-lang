@@ -1,0 +1,9 @@
+z=5;
+MIENTRAS((i<2)&j<3) hacer
+    i=5;
+    j=25;
+    Mientras (((i<10)&(j<10))&j<3) hacer
+        i=i+1;
+        j=k+h;
+    FINMIENTRAS
+finmientras
