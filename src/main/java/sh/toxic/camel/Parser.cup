@@ -5,20 +5,21 @@ import java_cup.runtime.*;
 parser code {:
     public String errsin="";
     public void syntax_error(Symbol x){
-        errsin+="\nError Sintaxis en pos " + (x.left+1) + "," + (x.right+1);
+        errsin+="\nError Sintaxis en pos Linea=" + (x.left+1) + ", Caracter=" + (x.right+1) + ", Value=" + x.value;
         throw new UnsupportedOperationException (errsin);
     }
 :};
 
-terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,asig,pc,tipo,list,cm;
-non terminal E,T,EL,EA,I,IS,Z;
+terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,tipo,asig,pc,list,cm;
+non terminal E,T,EL,EA,Z,I,IS;
 
 IS ::= I;
 IS ::= I IS;
 I ::= mientras pi EL pd hacer IS finmientras;
 I ::= id asig EL pc;
 I ::= tipo Z pc;
-Z ::= id | Z cm id;
+Z ::= Z cm id;
+Z ::= id;
 EL ::= EL ol EA;
 EL ::= EA;
 EA ::= E or E;

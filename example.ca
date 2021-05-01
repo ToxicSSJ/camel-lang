@@ -1,6 +1,6 @@
 z=5|n;
-Tipo z,a,b,c;
 MIENTRAS((i<2)&j<3) hacer
+    tipo a,b,z;
     i=5;
     j=25;
     Mientras (((i<10)&(j<10))&j<3) hacer
