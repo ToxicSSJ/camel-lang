@@ -8,41 +8,67 @@ package sh.toxic.camel;
 /** CUP generated class containing symbol constants. */
 public class sym {
   /* terminals */
-  public static final int hacer = 10;
-  public static final int id = 3;
-  public static final int or = 7;
-  public static final int EOF = 0;
-  public static final int pi = 4;
+  public static final int pc = 28;
+  public static final int para = 11;
+  public static final int tipo = 25;
+  public static final int paso = 13;
+  public static final int finpara = 14;
+  public static final int mientras = 19;
+  public static final int sino = 17;
+  public static final int hacer = 20;
+  public static final int finsi = 18;
   public static final int num = 2;
-  public static final int op = 8;
-  public static final int finmientras = 11;
-  public static final int list = 16;
-  public static final int mientras = 9;
-  public static final int asig = 13;
+  public static final int or = 8;
+  public static final int cm = 29;
+  public static final int op = 9;
+  public static final int programa = 10;
+  public static final int ol = 7;
+  public static final int EOF = 0;
+  public static final int asig = 27;
+  public static final int id = 3;
+  public static final int escribir = 26;
+  public static final int entonces = 16;
+  public static final int hasta = 12;
+  public static final int str = 4;
   public static final int error = 1;
-  public static final int ol = 6;
-  public static final int pd = 5;
-  public static final int pc = 14;
-  public static final int tipo = 12;
-  public static final int cm = 15;
+  public static final int entero = 24;
+  public static final int finmientras = 21;
+  public static final int pi = 5;
+  public static final int leer = 23;
+  public static final int si = 15;
+  public static final int finprograma = 22;
+  public static final int pd = 6;
   public static final String[] terminalNames = new String[] {
   "EOF",
   "error",
   "num",
   "id",
+  "str",
   "pi",
   "pd",
   "ol",
   "or",
   "op",
+  "programa",
+  "para",
+  "hasta",
+  "paso",
+  "finpara",
+  "si",
+  "entonces",
+  "sino",
+  "finsi",
   "mientras",
   "hacer",
   "finmientras",
+  "finprograma",
+  "leer",
+  "entero",
   "tipo",
+  "escribir",
   "asig",
   "pc",
-  "cm",
-  "list"
+  "cm"
   };
 }
 

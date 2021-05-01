@@ -1,0 +1,23 @@
+z=5|n;
+Mientras((i<2)&j<3) hacer
+    Tipo a,b,z;
+    Escribir a,z,"asd = esdfs",n;
+    i=5;
+    j=25;
+    Mientras (((i<10)&(j<10))&j<3) hacer
+        i=i+1;
+        j=k+h;
+    finMientras
+    Para i=k Hasta t Paso 3
+        n=i-1;
+    finPara
+    Si (((i<10)&(j<10))&j<3) entonces
+        i=i+1;
+        Si (((i<10)&(j<10))&j<3)
+            entonces
+                i=i+1;
+            siNo
+                i=i-1;
+        finSi
+    finSi
+finMientras

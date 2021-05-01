@@ -10,14 +10,27 @@ parser code {:
     }
 :};
 
-terminal num,id,pi,pd,ol,or,op,mientras,hacer,finmientras,tipo,asig,pc,cm,list;
-non terminal E,T,EL,EA,Z,I,IS;
+terminal num,id,str,pi,pd,ol,or,op,programa,para,hasta,paso,finpara,si,entonces,sino,finsi,mientras,hacer,finmientras,finprograma,leer,entero,tipo,escribir,asig,pc,cm;
+non terminal E,T,EL,EA,Z,K,I,S,IS;
 
-IS ::= I;
-IS ::= I IS;
-I ::= mientras pi EL pd hacer IS finmientras;
+IS ::= programa S finprograma;
+IS ::= programa id S finprograma;
+S ::= I;
+S ::= I S;
+I ::= si pi EL pd entonces S finsi;
+I ::= si pi EL pd entonces S sino S finsi;
+I ::= para id asig T hasta id S finpara;
+I ::= para id asig T hasta id paso num S finpara;
+I ::= mientras pi EL pd hacer S finmientras;
 I ::= id asig EL pc;
 I ::= tipo Z pc;
+I ::= leer Z pc;
+I ::= entero Z pc;
+I ::= escribir K pc;
+K ::= K cm id;
+K ::= K cm str;
+K ::= id;
+K ::= str;
 Z ::= Z cm id;
 Z ::= id;
 EL ::= EL ol EA;
